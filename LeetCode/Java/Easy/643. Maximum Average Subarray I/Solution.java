@@ -4,7 +4,7 @@ class Solution {
             return -1;
         int l=0, r=0;
         int sum=0;
-        double res=Double.MIN_VALUE;
+        double res=-Double.MIN_VALUE;
         while(r<nums.length)
         {
             sum=sum+nums[r];
