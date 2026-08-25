@@ -3,7 +3,7 @@
 Track your progress on the Grind 75 coding interview preparation list.
 
 ## Progress
-- **Completed:** 2 / 75 (2.7%)
+- **Completed:** 3 / 75 (4.0%)
 
 ---
 
@@ -70,7 +70,7 @@ Track your progress on the Grind 75 coding interview preparation list.
 - [ ] Set Matrix Zeroes
 - [ ] Spiral Matrix
 - [ ] Rotate Image
-- [ ] Word Search
+- [x] [Word Search](./Java/Medium/79. Word Search/)
 
 ### 📂 String
 - [ ] Longest Substring Without Repeating Characters
