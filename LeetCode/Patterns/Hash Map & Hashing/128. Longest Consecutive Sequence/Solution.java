@@ -7,7 +7,7 @@ class Solution {
         for(int i:nums)
             h.add(i);
         int count=0, x=0, l=1;
-        for(int i:nums)
+        for(int i:h)
         {
             if(!h.contains(i-1))
             {
@@ -18,8 +18,8 @@ class Solution {
                     x=x+1;
                     count++;
                 }
+                l=Math.max(l,count);
             }
-            l=Math.max(l,count);
         }
         return l;
     }
