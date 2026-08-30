@@ -9,9 +9,12 @@ class Solution {
 
         for(int i=0;i<n;i++)
         {
-            char c=s.charAt(i);
-            hm.computeIfAbsent(c,x->new ArrayList<Integer>()).add(i);
+            char ch=s.charAt(i);
+            hm.computeIfAbsent(ch,x->new ArrayList<>()).add(i);
         }
+
+        // A-->[0,2]
+        // B-->[1]
         long cur=0, ans=0;
         for(char c:hm.keySet())
         {
@@ -19,7 +22,8 @@ class Solution {
             hm.get(c).add(n);
             cur+=get(c);
         }
-
+        // A-->[0,2,3,3]
+        // B-->[1,3,3]
         for(char c:s.toCharArray())
         {
             ans+=cur;
@@ -27,6 +31,7 @@ class Solution {
             peek[c-'A']++;
             cur=cur+get(c)-old;
         }
+        
         return (int)ans%1000000007;
     }
     public int get(char c)
