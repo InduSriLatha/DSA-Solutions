@@ -1,9 +1,9 @@
 class Solution {
     public int findTheCity(int n, int[][] edges, int distanceThreshold) {
         int dist[][]=new int[n][n];
-        for(int[] row:dist)
+        for(int row[]:dist)
         {
-            Arrays.fill(row,10001);
+            Arrays.fill(row,1001);
         }
         for(int e[]:edges)
         {
@@ -14,16 +14,10 @@ class Solution {
             dist[i][i]=0;
         }
         for(int k=0;k<n;k++)
-        {
             for(int i=0;i<n;i++)
-            {
                 for(int j=0;j<n;j++)
-                {
                     dist[i][j]=Math.min(dist[i][j],dist[i][k]+dist[k][j]);
-                }
-            }
-        }
-        int res=0, smallest=n;
+        int res=-1, smallest=n;
         for(int i=0;i<n;i++)
         {
             int count=0;
