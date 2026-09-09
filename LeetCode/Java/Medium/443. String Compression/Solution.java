@@ -1,30 +1,30 @@
 class Solution {
     public int compress(char[] chars) {
-        int n=chars.length;
-        if(n<=1)
-            return n;
-        char present=chars[0];
-        int count=1;
+
+        if(chars.length<=1)
+            return chars.length;
         StringBuilder sb=new StringBuilder();
-        for(int i=1;i<n;i++)
+        char present=chars[0];
+        int count=0;
+        for(char c:chars)
         {
-            if (chars[i] == present) {
+            if(c==present)
                 count++;
-            } 
-            else {
+            else
+            {
                 sb.append(present);
-                if (count > 1)
+                if(count>1)
                     sb.append(count);
-                present = chars[i];
-                count = 1;
+                count=1;
+                present=c;
             }
         }
-        sb.append(chars[n-1]);
+        sb.append(present);
         if(count>1)
             sb.append(count);
-        for (int i = 0; i < sb.length(); i++) {
-            chars[i] = sb.charAt(i);
-        }
+        for(int i=0;i<sb.length();i++)
+            chars[i]=sb.charAt(i);
         return sb.length();
+        
     }
 }
