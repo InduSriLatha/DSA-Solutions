@@ -1,8 +1,8 @@
 class Solution {
     public int compress(char[] chars) {
-
+        int n=chars.length;
         if(chars.length<=1)
-            return chars.length;
+            return n;
         StringBuilder sb=new StringBuilder();
         char present=chars[0];
         int count=0;

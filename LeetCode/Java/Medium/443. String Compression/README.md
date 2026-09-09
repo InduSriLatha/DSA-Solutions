@@ -9,7 +9,7 @@ Two Pointers, String
 
 ### 🚀 Performance
 - **Runtime:** 2 ms
-- **Memory:** 45.2 MB
+- **Memory:** 45.1 MB
 
 ---
 
