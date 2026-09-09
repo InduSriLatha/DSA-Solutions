@@ -1,19 +1,11 @@
-import java.util.HashMap;
 class Solution {
-    public boolean isAnagram(String s1, String s2) {
-        if(s1.length()!=s2.length())
-			return false;
-		int freq[]=new int[26];
-        for(int i=0;i<s1.length();i++)
-        {
-            freq[s1.charAt(i)-'a']++;
-            freq[s2.charAt(i)-'a']--;
-        }
-        for(int i=0;i<26;i++)
-        {
-            if(freq[i]!=0)
-                return false;
-        }
-        return true;
+    public boolean isAnagram(String s, String t) {
+        char ch1[]=t.toCharArray();
+        Arrays.sort(ch1);
+        String t2=new String(ch1);
+        char ch2[]=s.toCharArray();
+        Arrays.sort(ch2);
+        String s2=new String(ch2);
+        return s2.equals(t2);
     }
 }
