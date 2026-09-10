@@ -1,32 +1,23 @@
 class Solution {
     public String frequencySort(String s) {
         HashMap<Character,Integer> hm=new HashMap<>();
-        for(char ch:s.toCharArray())
-        {
-            hm.put(ch,hm.getOrDefault(ch,0)+1);
-        }
-        List<Character> list = new ArrayList<>(hm.keySet());
+        for(char c:s.toCharArray())
+            hm.put(c,hm.getOrDefault(c,0)+1);
+
+        List<Character> list=new ArrayList<>(hm.keySet());
         Collections.sort(list,(a,b)->{
-            if(hm.get(a)!=hm.get(b))  return hm.get(b)-hm.get(a);
+            if(hm.get(a)!=hm.get(b))
+                return hm.get(b)-hm.get(a);
             return a-b;
         });
-
-        StringBuilder res=new StringBuilder();
-        for(char ch:list)
+        StringBuilder sb=new StringBuilder();
+        for(Character c:list)
         {
-            for(int j=0;j<hm.get(ch);j++)
-                res.append(ch);
+            for(int i=0;i<hm.get(c);i++)
+                sb.append(c);
         }
-        return res.toString();
-    }
-}
-class Pair
-{
-    int f;
-    char ch;
-    Pair(int f,char ch)
-    {
-        this.f=f;
-        this.ch=ch;
+        return sb.toString();
+        
+        
     }
 }
