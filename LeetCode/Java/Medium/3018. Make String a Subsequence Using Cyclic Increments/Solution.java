@@ -1,22 +1,11 @@
 class Solution {
     public boolean canMakeSubsequence(String str1, String str2) {
-
-        int n1=str1.length();
-        int n2=str2.length();
-        if(n1<n2)
-            return false;
-        
         int i=0, j=0;
-        while(i<n1 && j<n2)
+        while(i<str1.length() && j<str2.length())
         {
-            char ch1=str1.charAt(i);
-            char ch2=str2.charAt(j);
-            if(ch1==ch2)
-            {
-                i++;
-                j++;
-            }
-            else if(ch1+1==ch2 || (ch1=='z' && ch2=='a'))
+            char c1=str1.charAt(i);
+            char c2=str2.charAt(j);
+            if(c1==c2 || c1+1==c2 || (c1=='z' && c2=='a'))
             {
                 i++;
                 j++;
@@ -24,8 +13,6 @@ class Solution {
             else
                 i++;
         }
-        if(j==n2)
-            return true;
-        return false;
+        return (j==str2.length());
     }
 }
