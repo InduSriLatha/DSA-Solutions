@@ -1,44 +1,45 @@
 class Solution {
     public List<String> invalidTransactions(String[] transactions) {
-        List<String[]> transac=new ArrayList<>();
-        for(String s: transactions)
+        List<String> res=new ArrayList<>();
+
+        List<List<String>> transac=new ArrayList<>();
+        for(String s:transactions)
         {
-            String w[]=s.split(",");
-            transac.add(w);
+            List<String> t=Arrays.asList(s.split(","));
+            transac.add(t);
         }
-        List<Integer> idx=new ArrayList<>();
-        List<String> invalid=new ArrayList<>();
+        List<Integer> ind=new ArrayList<>();
         for(int i=0;i<transac.size();i++)
         {
-            String a[]=transac.get(i);
-            if(Integer.parseInt(a[2])>1000 && !idx.contains(i))
+            if(ind.contains(i))
+                continue;
+            if(Integer.parseInt(transac.get(i).get(2))>1000)
             {
-                idx.add(i);
-                invalid.add(transactions[i]);
+                res.add(transactions[i]);
+                ind.add(i);
             }
-        }
-        for(int j=0;j<transac.size()-1;j++)
-        {
-            for(int i=j+1;i<transac.size();i++)
+            for(int j=0;j<transac.size();j++)
             {
-                String a1[]=transac.get(i);
-                String a2[]=transac.get(j);
-                int d=Math.abs(Integer.parseInt(a1[1])-Integer.parseInt(a2[1]));
-                if(d<=60 && a1[0].equals(a2[0]) && !a1[3].equals(a2[3]))
+                if(transac.get(i).get(0).equals(transac.get(j).get(0)) && i!=j)
                 {
-                    if(!idx.contains(i))
+                    int d1=Integer.parseInt(transac.get(i).get(1));
+                    int d2=Integer.parseInt(transac.get(j).get(1));
+                    if(Math.abs(d1-d2)<=60 && !transac.get(i).get(3).equals(transac.get(j).get(3)))
                     {
-                        invalid.add(transactions[i]);
-                        idx.add(i);
-                    }
-                    if(!idx.contains(i+1))
-                    {
-                        invalid.add(transactions[j]);
-                        idx.add(j);
+                        if(!ind.contains(i))
+                        {
+                            res.add(transactions[i]);
+                            ind.add(i);
+                        }
+                        if(!ind.contains(j))
+                        {
+                            res.add(transactions[j]);
+                            ind.add(j);
+                        }
                     }
                 }
             }
         }
-        return invalid;
+        return res;
     }
 }
