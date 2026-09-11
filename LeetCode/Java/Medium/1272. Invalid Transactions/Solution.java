@@ -8,17 +8,16 @@ class Solution {
         }
         List<Integer> idx=new ArrayList<>();
         List<String> invalid=new ArrayList<>();
-        for(int i=0;i<transac.size();i++)
+        for(int j=0;j<transac.size();j++)
         {
-            String a[]=transac.get(i);
-            if(Integer.parseInt(a[2])>1000 && !idx.contains(i))
+            if(idx.contains(j))
+                continue;
+            String a[]=transac.get(j);
+            if(Integer.parseInt(a[2])>1000)
             {
-                idx.add(i);
-                invalid.add(transactions[i]);
+                idx.add(j);
+                invalid.add(transactions[j]);
             }
-        }
-        for(int j=0;j<transac.size()-1;j++)
-        {
             for(int i=j+1;i<transac.size();i++)
             {
                 String a1[]=transac.get(i);
