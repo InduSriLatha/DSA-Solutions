@@ -1,6 +1,6 @@
 # 📝 160. Intersection of Two Linked Lists (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/intersection-of-two-linked-lists/solutions/8340111/optimal-approach-best-initution-by-lc-sh-6ydv/)
+🔗 [Problem Link](https://leetcode.com/problems/intersection-of-two-linked-lists/solutions/49785/java-solution-without-knowing-the-differ-kezf/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Easy-brightgreen) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
