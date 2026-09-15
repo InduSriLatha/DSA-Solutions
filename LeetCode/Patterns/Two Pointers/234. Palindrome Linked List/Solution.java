@@ -18,8 +18,7 @@ class Solution {
         }
         ListNode head1=head;
         ListNode head2=reverse(sp.next);
-
-        while(head2!=null)
+        while(head1!=null && head2!=null)
         {
             if(head1.val!=head2.val)
                 return false;
@@ -28,10 +27,9 @@ class Solution {
         }
         return true;
     }
-    ListNode reverse(ListNode head)
+    public static ListNode reverse(ListNode head)
     {
-        ListNode prev=null;
-        ListNode temp=head;
+        ListNode temp=head, prev=null;
         while(temp!=null)
         {
             ListNode front=temp.next;
