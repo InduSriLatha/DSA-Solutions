@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 31 / 150 (20.7%)
+- **Completed:** 32 / 150 (21.3%)
 
 ---
 
@@ -45,7 +45,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [ ] Largest Rectangle in Histogram
 
 ### 📂 Binary Search
-- [ ] Binary Search
+- [x] [Binary Search](./Java/Easy/792. Binary Search/)
 - [ ] Search a 2D Matrix
 - [ ] Koko Eating Bananas
 - [ ] Find Minimum in Rotated Sorted Array
