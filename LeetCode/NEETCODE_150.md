@@ -3,7 +3,7 @@
 Track your progress on the NeetCode 150 roadmap practice problems.
 
 ## Progress
-- **Completed:** 27 / 150 (18.0%)
+- **Completed:** 28 / 150 (18.7%)
 
 ---
 
@@ -161,7 +161,7 @@ Track your progress on the NeetCode 150 roadmap practice problems.
 - [x] [Valid Parenthesis String](./Java/Medium/678. Valid Parenthesis String/)
 
 ### 📂 Intervals
-- [ ] Insert Interval
+- [x] [Insert Interval](./Java/Medium/57. Insert Interval/)
 - [x] [Merge Intervals](./Java/Medium/56. Merge Intervals/)
 - [x] [Non-overlapping Intervals](./Java/Medium/435. Non-overlapping Intervals/)
 - [ ] Meeting Rooms
