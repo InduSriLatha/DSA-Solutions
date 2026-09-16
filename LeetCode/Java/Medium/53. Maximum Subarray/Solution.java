@@ -1,6 +1,6 @@
 class Solution {
     public int maxSubArray(int[] nums) {
-        int sum=0, res=-1;
+        int sum=0, res=Int;
         for(int x:nums)
         {
             if(sum<0)
