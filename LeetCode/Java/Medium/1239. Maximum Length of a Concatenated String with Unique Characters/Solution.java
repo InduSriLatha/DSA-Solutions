@@ -5,7 +5,8 @@ class Solution {
         for(int i=0;i<n;i++)
         {
             StringBuilder sb=new StringBuilder();
-            sb.append(arr.get(i));
+            if(!containsDuplicate(sb,arr.get(i)))
+                sb.append(arr.get(i));
             for(int j=0;j<n;j++)
             {
                 if(i==j)
