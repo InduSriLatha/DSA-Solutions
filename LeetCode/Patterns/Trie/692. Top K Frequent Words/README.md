@@ -8,8 +8,8 @@
 Array, Hash Table, String, Trie, Sorting, Heap (Priority Queue), Bucket Sort, Counting
 
 ### 🚀 Performance
-- **Runtime:** N/A
-- **Memory:** N/A
+- **Runtime:** 9 ms
+- **Memory:** 46.4 MB
 
 ---
 
