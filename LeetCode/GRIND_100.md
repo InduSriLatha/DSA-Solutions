@@ -3,7 +3,7 @@
 Track your progress on the Grind 100 coding interview preparation list.
 
 ## Progress
-- **Completed:** 31 / 100 (31.0%)
+- **Completed:** 32 / 100 (32.0%)
 
 ---
 
@@ -15,7 +15,7 @@ Track your progress on the Grind 100 coding interview preparation list.
 - [ ] Container With Most Water
 - [x] [Move Zeroes](./Java/Easy/283. Move Zeroes/)
 - [x] [Sort Colors](./Java/Medium/75. Sort Colors/)
-- [ ] Product of Array Except Self
+- [x] [Product of Array Except Self](./Java/Medium/238. Product of Array Except Self/)
 - [x] [Next Permutation](./Java/Medium/31. Next Permutation/)
 - [ ] Trapping Rain Water
 - [ ] Find the Duplicate Number
