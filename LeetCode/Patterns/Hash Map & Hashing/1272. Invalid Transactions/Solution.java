@@ -1,25 +1,28 @@
 class Solution {
     public List<String> invalidTransactions(String[] transactions) {
         List<String[]> transac=new ArrayList<>();
-        for(String s: transactions)
+        for(String s:transactions)
         {
-            String w[]=s.split(",");
-            transac.add(w);
+            String arr[]=s.split(",");
+            transac.add(arr);
         }
+        
         List<Integer> idx=new ArrayList<>();
         List<String> invalid=new ArrayList<>();
-        for(int j=0;j<transac.size();j++)
+        for(int i=0;i<transactions.length;i++)
         {
-            if(idx.contains(j))
+            if(idx.contains(i))
                 continue;
-            String a[]=transac.get(j);
+            String a[]=transac.get(i);
             if(Integer.parseInt(a[2])>1000)
             {
-                idx.add(j);
-                invalid.add(transactions[j]);
+                idx.add(i);
+                invalid.add(transactions[i]);
             }
-            for(int i=0;i<transac.size();i++)
+            for(int j=0;j<transactions.length;j++)
             {
+                if(i==j)
+                    continue;
                 String a1[]=transac.get(i);
                 String a2[]=transac.get(j);
                 int d=Math.abs(Integer.parseInt(a1[1])-Integer.parseInt(a2[1]));
@@ -27,13 +30,13 @@ class Solution {
                 {
                     if(!idx.contains(i))
                     {
-                        invalid.add(transactions[i]);
                         idx.add(i);
+                        invalid.add(transactions[i]);
                     }
                     if(!idx.contains(j))
                     {
-                        invalid.add(transactions[j]);
                         idx.add(j);
+                        invalid.add(transactions[j]);
                     }
                 }
             }
