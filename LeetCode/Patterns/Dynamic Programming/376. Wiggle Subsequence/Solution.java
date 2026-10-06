@@ -7,7 +7,7 @@ class Solution {
             int diff=nums[i+1]-nums[i];
             if(diff>0)
                 up=down+1;
-            else
+            if
                 down=up+1;
         }
         return Math.max(up,down);
