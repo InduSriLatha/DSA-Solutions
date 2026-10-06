@@ -2,18 +2,24 @@ class Solution {
     public List<Integer> partitionLabels(String s) {
         int n=s.length();
         List<Integer> res=new ArrayList<>();
+        Map<Character,Integer> hm=new HashMap<>();
         for(int i=0;i<n;i++)
         {
             char c=s.charAt(i);
-            int index=s.lastIndexOf(c);
-            for(int j=i+1;j<=index;j++)
+            hm.put(c,i);
+        }
+
+        int prev=-1, max=0;
+        for(int i=0;i<n;i++)
+        {
+            char c=s.charAt(i);
+            max=Math.max(max,hm.get(c));
+            if(max==i)
             {
-                if(s.lastIndexOf(s.charAt(j))>index)
-                    index=s.lastIndexOf(s.charAt(j));
+                res.add(max-prev);
+                prev=max;
             }
-            res.add(index-i+1);
-            i=index;
-        }  
+        }
         return res;
     }
 }
