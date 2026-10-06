@@ -1,6 +1,6 @@
 # 📝 376. Wiggle Subsequence (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/wiggle-subsequence/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/wiggle-subsequence/)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
