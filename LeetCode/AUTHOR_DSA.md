@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 16 / 238 (6.7%)
+- **Completed:** 17 / 238 (7.1%)
 
 ---
 
@@ -121,7 +121,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Best Time to Buy and Sell Stock
 - [ ] Best Time to Buy and Sell Stock II
 - [x] [Rotate Array](./Java/Medium/189. Rotate Array/)
-- [ ] Lemonade Change
+- [x] [Lemonade Change](./Java/Easy/890. Lemonade Change/)
 - [ ] Time Needed to Buy Tickets
 - [ ] Boats to Save People
 - [x] [Gas Station](./Java/Medium/134. Gas Station/)
