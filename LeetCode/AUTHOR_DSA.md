@@ -3,7 +3,7 @@
 Track your progress on the Curated 100hrs DSA core interview preparation list.
 
 ## Progress
-- **Completed:** 15 / 238 (6.3%)
+- **Completed:** 16 / 238 (6.7%)
 
 ---
 
@@ -124,7 +124,7 @@ Track your progress on the Curated 100hrs DSA core interview preparation list.
 - [ ] Lemonade Change
 - [ ] Time Needed to Buy Tickets
 - [ ] Boats to Save People
-- [ ] Gas Station
+- [x] [Gas Station](./Java/Medium/134. Gas Station/)
 
 ### 📂 MODULE  3.9: ADVANCED ARRAY QUESTIONS Co
 - [ ] Container With Most Water
