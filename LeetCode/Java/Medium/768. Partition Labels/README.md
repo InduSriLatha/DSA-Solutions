@@ -8,7 +8,7 @@
 Hash Table, Two Pointers, String, Greedy
 
 ### 🚀 Performance
-- **Runtime:** 118 ms
+- **Runtime:** 9 ms
 - **Memory:** 43.8 MB
 
 ---
