@@ -1,6 +1,6 @@
 # 📝 763. Partition Labels (LeetCode)
 
-🔗 [Problem Link](https://leetcode.com/problems/partition-labels/solutions/1868842/javac-visually-explaineddddd-by-hi-malik-211o/?utm_source=chatgpt.com)
+🔗 [Problem Link](https://leetcode.com/problems/partition-labels)
 
 ![Difficulty](https://img.shields.io/badge/Difficulty-Medium-orange) ![Language](https://img.shields.io/badge/Language-Java-blue)
 
